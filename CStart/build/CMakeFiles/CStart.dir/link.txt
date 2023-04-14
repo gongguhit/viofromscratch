@@ -1,1 +1,1 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/CStart.dir/main.cpp.o -o CStart 
+/usr/bin/c++ -g -rdynamic CMakeFiles/CStart.dir/rotation_eigen.cpp.o -o CStart 

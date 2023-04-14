@@ -129,29 +129,29 @@ CStart/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CStart.dir/build.make CMakeFiles/CStart.dir/build
 .PHONY : CStart/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+rotation_eigen.o: rotation_eigen.cpp.o
+.PHONY : rotation_eigen.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CStart.dir/build.make CMakeFiles/CStart.dir/main.cpp.o
-.PHONY : main.cpp.o
+rotation_eigen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CStart.dir/build.make CMakeFiles/CStart.dir/rotation_eigen.cpp.o
+.PHONY : rotation_eigen.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+rotation_eigen.i: rotation_eigen.cpp.i
+.PHONY : rotation_eigen.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CStart.dir/build.make CMakeFiles/CStart.dir/main.cpp.i
-.PHONY : main.cpp.i
+rotation_eigen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CStart.dir/build.make CMakeFiles/CStart.dir/rotation_eigen.cpp.i
+.PHONY : rotation_eigen.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+rotation_eigen.s: rotation_eigen.cpp.s
+.PHONY : rotation_eigen.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CStart.dir/build.make CMakeFiles/CStart.dir/main.cpp.s
-.PHONY : main.cpp.s
+rotation_eigen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CStart.dir/build.make CMakeFiles/CStart.dir/rotation_eigen.cpp.s
+.PHONY : rotation_eigen.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CStart"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... rotation_eigen.o"
+	@echo "... rotation_eigen.i"
+	@echo "... rotation_eigen.s"
 .PHONY : help
 
 

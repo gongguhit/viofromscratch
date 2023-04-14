@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CStart.dir/main.cpp.o"
-  "CMakeFiles/CStart.dir/main.cpp.o.d"
+  "CMakeFiles/CStart.dir/rotation_eigen.cpp.o"
+  "CMakeFiles/CStart.dir/rotation_eigen.cpp.o.d"
   "CStart"
   "CStart.pdb"
 )

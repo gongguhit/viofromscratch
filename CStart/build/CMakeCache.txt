@@ -20,15 +20,11 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
-
-//Enable/Disable color output during build.
-CMAKE_COLOR_MAKEFILE:BOOL=ON
+//No help, variable specified on the command line.
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/usr/bin/g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -54,7 +50,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+CMAKE_C_COMPILER:STRING=/usr/bin/gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -97,8 +93,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+//No help, variable specified on the command line.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/ggx1c/Documents/cpplearn/CStart/build/CMakeFiles/pkgRedirects
@@ -109,8 +105,8 @@ CMAKE_INSTALL_PREFIX:PATH=/usr/local
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
 
-//Path to a program.
-CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
+//Program used to build from build.ninja files.
+CMAKE_MAKE_PROGRAM:FILEPATH=/home/ggx1c/anaconda3/bin/ninja
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -221,8 +217,119 @@ CStart_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 CStart_SOURCE_DIR:STATIC=/home/ggx1c/Documents/cpplearn/CStart
 
-//The directory containing a CMake configuration file for Eigen3.
-Eigen3_DIR:PATH=/usr/local/share/eigen3/cmake
+//Path to a library.
+G2O_CLI_LIBRARY:FILEPATH=/usr/local/lib/libg2o_cli.so
+
+//Path to a library.
+G2O_CLI_LIBRARY_DEBUG:FILEPATH=G2O_CLI_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_CORE_LIBRARY:FILEPATH=/usr/local/lib/libg2o_core.so
+
+//Path to a library.
+G2O_CORE_LIBRARY_DEBUG:FILEPATH=G2O_CORE_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a file.
+G2O_INCLUDE_DIR:PATH=/usr/local/include
+
+//Path to a library.
+G2O_SOLVER_CHOLMOD:FILEPATH=/usr/local/lib/libg2o_solver_cholmod.so
+
+//Path to a library.
+G2O_SOLVER_CHOLMOD_DEBUG:FILEPATH=G2O_SOLVER_CHOLMOD_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_CSPARSE:FILEPATH=/usr/local/lib/libg2o_solver_csparse.so
+
+//Path to a library.
+G2O_SOLVER_CSPARSE_DEBUG:FILEPATH=G2O_SOLVER_CSPARSE_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_CSPARSE_EXTENSION:FILEPATH=/usr/local/lib/libg2o_csparse_extension.so
+
+//Path to a library.
+G2O_SOLVER_CSPARSE_EXTENSION_DEBUG:FILEPATH=G2O_SOLVER_CSPARSE_EXTENSION_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_DENSE:FILEPATH=/usr/local/lib/libg2o_solver_dense.so
+
+//Path to a library.
+G2O_SOLVER_DENSE_DEBUG:FILEPATH=G2O_SOLVER_DENSE_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_EIGEN:FILEPATH=/usr/local/lib/libg2o_solver_eigen.so
+
+//Path to a library.
+G2O_SOLVER_EIGEN_DEBUG:FILEPATH=G2O_SOLVER_EIGEN_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_PCG:FILEPATH=/usr/local/lib/libg2o_solver_pcg.so
+
+//Path to a library.
+G2O_SOLVER_PCG_DEBUG:FILEPATH=G2O_SOLVER_PCG_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_SLAM2D_LINEAR:FILEPATH=/usr/local/lib/libg2o_solver_slam2d_linear.so
+
+//Path to a library.
+G2O_SOLVER_SLAM2D_LINEAR_DEBUG:FILEPATH=G2O_SOLVER_SLAM2D_LINEAR_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_SOLVER_STRUCTURE_ONLY:FILEPATH=/usr/local/lib/libg2o_solver_structure_only.so
+
+//Path to a library.
+G2O_SOLVER_STRUCTURE_ONLY_DEBUG:FILEPATH=G2O_SOLVER_STRUCTURE_ONLY_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_STUFF_LIBRARY:FILEPATH=/usr/local/lib/libg2o_stuff.so
+
+//Path to a library.
+G2O_STUFF_LIBRARY_DEBUG:FILEPATH=G2O_STUFF_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_DATA:FILEPATH=/usr/local/lib/libg2o_types_data.so
+
+//Path to a library.
+G2O_TYPES_DATA_DEBUG:FILEPATH=G2O_TYPES_DATA_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_ICP:FILEPATH=/usr/local/lib/libg2o_types_icp.so
+
+//Path to a library.
+G2O_TYPES_ICP_DEBUG:FILEPATH=G2O_TYPES_ICP_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SBA:FILEPATH=/usr/local/lib/libg2o_types_sba.so
+
+//Path to a library.
+G2O_TYPES_SBA_DEBUG:FILEPATH=G2O_TYPES_SBA_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SCLAM2D:FILEPATH=/usr/local/lib/libg2o_types_sclam2d.so
+
+//Path to a library.
+G2O_TYPES_SCLAM2D_DEBUG:FILEPATH=G2O_TYPES_SCLAM2D_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SIM3:FILEPATH=/usr/local/lib/libg2o_types_sim3.so
+
+//Path to a library.
+G2O_TYPES_SIM3_DEBUG:FILEPATH=G2O_TYPES_SIM3_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SLAM2D:FILEPATH=/usr/local/lib/libg2o_types_slam2d.so
+
+//Path to a library.
+G2O_TYPES_SLAM2D_DEBUG:FILEPATH=G2O_TYPES_SLAM2D_DEBUG-NOTFOUND
+
+//Path to a library.
+G2O_TYPES_SLAM3D:FILEPATH=/usr/local/lib/libg2o_types_slam3d.so
+
+//Path to a library.
+G2O_TYPES_SLAM3D_DEBUG:FILEPATH=G2O_TYPES_SLAM3D_DEBUG-NOTFOUND
+
+//The directory containing a CMake configuration file for Opencv.
+Opencv_DIR:PATH=Opencv_DIR-NOTFOUND
 
 
 ########################
@@ -238,11 +345,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/ggx1c/Documents/cpplearn/CStart/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=25
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=26
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
-//ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
-CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
@@ -297,12 +402,10 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
-CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
-CMAKE_GENERATOR:INTERNAL=Unix Makefiles
+CMAKE_GENERATOR:INTERNAL=Ninja
 //Generator instance identifier.
 CMAKE_GENERATOR_INSTANCE:INTERNAL=
 //Name of generator platform.

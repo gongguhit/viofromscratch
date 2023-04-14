@@ -1,13 +1,30 @@
-cmake_minimum_required (VERSION 2.8) #最低要求的CMake版本
-project(CStart) # 项目名称
+cmake_minimum_required (VERSION 2.8) 
+project(CStart)
 set(CMAKE_BUILD_TYPE "Debug")
 
-file(GLOB SRC_FILE *.cpp) # 建立变量SRC_FILE为目录下.c文件列表
 
-find_package(Eigen3 REQUIRED)
-find_package(g2o REQUIRED)
+LIST(APPEND CMAKE_MODULE_PATH /home/ggx1c/Documents/cpplearn/g2o/cmake_modules)
+set(G2O_ROOT /usr/local/include/g2o)
 
-include_directories(${EIGEN3_INCLUDE_DIR})
+file(GLOB SRC_FILE *.cpp)
+
+find_package(G2O REQUIRED)
+find_package(Opencv REQUIRED)
+
+include_directories("/usr/local/include/eigen3")
 include_directories(${G2O_INCLUDE_DIRS})
+include_directories(${OpenCV_INCLUDE_DIRS})
+#include_directories("/usr/include/opencv4")
 
-add_executable (${PROJECT_NAME} ${SRC_FILE}) # 要求编译可执行文件
+# IF(G2O_FOUND)
+#     message("G2O lib is found:" ${G2O_INCLUDE_DIRS}) 
+#     message("G2O lib:" ${G2O_LIBRARIES})
+# ENDIF(G2O_FOUND)
+
+
+# add_executable (${PROJECT_NAME} ${SRC_FILE})
+add_executable (${PROJECT_NAME} g2olearning.cpp)
+
+target_link_libraries(CStart
+        ${OpenCV_LIBS}
+        ${G2O_LIBRARIES})
