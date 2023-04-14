@@ -1,0 +1,3 @@
+/home/ggx1c/Documents/cpplearn/CStart/build/CMakeFiles/CStart.dir
+/home/ggx1c/Documents/cpplearn/CStart/build/CMakeFiles/edit_cache.dir
+/home/ggx1c/Documents/cpplearn/CStart/build/CMakeFiles/rebuild_cache.dir
